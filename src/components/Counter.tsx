@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { ChangeEvent, FormEvent, useState } from 'react';
  
   interface User {
       name:string,
@@ -14,13 +14,18 @@ const Counter = () => {
       const dec=()=>{
           setCounter(counter - 1)
       }
-      const handleSetUser=()=>{
-       
+      // event for form
+      const handleSetUser=(e: FormEvent<HTMLFormElement>)=>{
+        e.preventDefault()
         const person = {
             name:'biden',
             age:83
         }
         setUser(person)
+      }
+      // event for input onchange
+      const handleNameChange =(e:ChangeEvent<HTMLInputElement>)=>{
+
       }
     return (
         <div>
