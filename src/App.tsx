@@ -1,24 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+
+
+/* let people = 'hasan';
+    people = 23 */
+
+ /*    let student:string = 'hasan';
+    let age:number = 24;
+    let isSmart:boolean = false; */
+
+    /* let students:string[] = ['hob','biden','hariiy','chapline']
+    let fees:number[] = [12,32,423,12,23] */
+
+      interface Person {
+        name:string;
+         age:number;
+          job?:string
+        } 
+
+     const person:Person= {
+       name: 'sagla',
+       age:23,
+      
+     }
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
     </div>
   );
 }
