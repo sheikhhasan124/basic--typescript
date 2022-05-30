@@ -1,12 +1,26 @@
 import React, { useState } from 'react';
+ 
+  interface User {
+      name:string,
+      age:number
+  }
 
 const Counter = () => {
     const [counter, setCounter] = useState<number>(0)
+    const [user, setUser] = useState<User | null>(null)
       const inc=()=>{
           setCounter(counter + 1)
       }
       const dec=()=>{
           setCounter(counter - 1)
+      }
+      const handleSetUser=()=>{
+       
+        const person = {
+            name:'biden',
+            age:83
+        }
+        setUser(person)
       }
     return (
         <div>
